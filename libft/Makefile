@@ -6,9 +6,11 @@
 #    By: fprosper <fprosper@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/27 20:18:22 by fprosper          #+#    #+#              #
-#    Updated: 2022/10/19 14:59:05 by fprosper         ###   ########.fr        #
+#    Updated: 2023/04/26 18:37:25 by fprosper         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+NAME	= libft.a
 
 SRCS	=	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c \
 			ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_strlcpy.c ft_strlcat.c \
@@ -22,8 +24,6 @@ OBJS			= $(SRCS:.c=.o)
 CC				= gcc
 RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror -I.
-
-NAME			= libft.a
 
 all:			$(NAME)
 
